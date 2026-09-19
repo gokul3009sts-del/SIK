@@ -1,0 +1,41 @@
+name: sik_hotel_billing
+description: SIK - Offline Hotel/Restaurant Billing Application
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Local database (100% offline)
+  sqflite: ^2.3.0
+  path: ^1.8.3
+
+  # File storage / export
+  path_provider: ^2.1.1
+  permission_handler: ^11.1.0
+  csv: ^6.0.0
+  share_plus: ^7.2.1
+  file_picker: ^6.1.1
+
+  # Bill formatting / printing (system + PDF, works fully offline)
+  intl: ^0.19.0
+  pdf: ^3.10.7
+  printing: ^5.11.1
+
+  # Password hashing (local only, no internet)
+  crypto: ^3.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
